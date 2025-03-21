@@ -11,7 +11,7 @@ fun guessedNumbers(s: String?): List<Int>? {
         s?.split(",")?.map { it.trim().toInt() }
     } catch (e: NumberFormatException) {
         null
-    }
+    }  
     """
 }
 fun isLegalGuess(guess: List<Int>?) : Boolean {
